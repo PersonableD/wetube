@@ -4,7 +4,7 @@
   "description": "Cloning Youtube with VanilaJS and NodeJS",
   "main": "init.js",
   "author": "Kim-seul a",
-  "license": "ISC",
+  "license": "ISC",  "private": true,
   "dependencies": {
     "@babel/core": "^7.8.4",
     "@babel/node": "^7.8.4",
@@ -31,7 +31,7 @@
     "webpack-cli": "^3.3.11"
   },
   "scripts": {
-    "dev:server": "nodemon --exec babel-node init.js --delay 2",
+    "dev:server": "nodemon --exec babel-node init.js --delay 2 --ignore 'scss'",
     "dev:assets": "cross-env WEBPACK_ENV=development webpack -w",
     "build:assets": "cross-env WEBPACK_ENV=production webpack"
   },
